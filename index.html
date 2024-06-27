@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kerri</title>
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/media.css">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbar-example">
+    <header id="home" class="vh-100">
+        <nav class="navbar navbar-expand-lg bg-white fixed-top  shadow" id="navbar-example">
+            <div class="container">
+                <a class="navbar-brand fw-bolder fs-2" href="#home">Kerri</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-3 fw-bold">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#About">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Services">Services
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Client">Client</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Portfolio">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Blog">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Contact">Contact</a>
+                        </li>
+
+                </div>
+            </div>
+        </nav>
+
+        <div class="container headr-container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="py-5 text-center mt-5 d-flex align-items-center flex-column gap-3 text-white">
+
+                        <h4 class="">Welcome</h4>
+                        <h1 class="display-4 fw-medium">I'M <span id="element"></span></h1>
+                        <p>It is a long established fact that a reader will be of a page when established fact looking
+                            at its layout.</p>
+                        <button class="btn btn-outline-custom mb-2">DOWNLOAD CV</button>
+                        <span class="slider text-center mt-5 bounce-top ">
+                            <a href="#About"></a>
+                        </span>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <span class="setting-spin px-2 mt-5 top-50 position-fixed">
+            <i class="fa-solid fa-gear fa-spin fa-lg text-white "></i>
+        </span>
+        
+    </header>
+    <section id="About" class="vh-100">
+
+    </section>
+
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Kerri Deo.', 'A Graphic Designer.', 'A Photographer.'],
+            typeSpeed: 50, backSpeed: 50,
+            backDelay: 1000, loop: true,
+            startDelay: 500,
+        });
+    </script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
