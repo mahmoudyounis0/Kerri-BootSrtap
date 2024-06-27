@@ -70,8 +70,8 @@ header {
 
 header .container.headr-container {
     padding-top: 80px;
-
-    & p {
+    & h1{max-width:450px} 
+    & p { 
         max-width: 450px;
         color: var(--paragrph);
     }
