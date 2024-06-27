@@ -158,8 +158,8 @@ span.setting-spin {
 }
 
 .bounce-top {
-    animation: bounce-top 1s infinite ease-in-out ;
-    -webkit-animation: bounce-top 1s infinite ease-in-out ;
+    animation: bounce-top 1.5s infinite ease-in-out ;
+    -webkit-animation: bounce-top 1.5s infinite ease-in-out ;
 }
 
 @keyframes bounce-top {
