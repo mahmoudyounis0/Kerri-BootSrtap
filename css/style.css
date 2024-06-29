@@ -8,8 +8,14 @@ body {
 
 :root {
     --color-main: #E55F78;
-    --paragrph: #C1C1C1;
+    --paragrph: #767575;
+    --section: #F8F9FA;
+
+    & p {
+        color: var(--paragrph);
+    }
 }
+
 /******* scroll bar styling ********/
 ::-webkit-scrollbar {
     width: 8px;
@@ -71,7 +77,7 @@ header {
 header .container.headr-container {
     padding-top: 80px;
 
-    & p { 
+    & p {
         max-width: 450px;
         color: var(--paragrph);
     }
@@ -136,7 +142,8 @@ span.setting-spin {
     -o-border-radius: 30px;
     position: relative;
     cursor: pointer;
-    &::after{
+
+    &::after {
         content: '';
         position: absolute;
         width: 3px;
@@ -149,17 +156,17 @@ span.setting-spin {
         -moz-border-radius: 10px;
         -ms-border-radius: 10px;
         -o-border-radius: 10px;
-        transform: translate(-50%,-50%);
-        -webkit-transform: translate(-50%,-50%);
-        -moz-transform: translate(-50%,-50%);
-        -ms-transform: translate(-50%,-50%);
-        -o-transform: translate(-50%,-50%);
-}
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+    }
 }
 
 .bounce-top {
-    animation: bounce-top 1.5s infinite ease-in-out ;
-    -webkit-animation: bounce-top 1.5s infinite ease-in-out ;
+    animation: bounce-top 1.5s infinite ease-in-out;
+    -webkit-animation: bounce-top 1.5s infinite ease-in-out;
 }
 
 @keyframes bounce-top {
@@ -172,7 +179,7 @@ span.setting-spin {
         -moz-transform: translateY(-40px);
         -ms-transform: translateY(-40px);
         -o-transform: translateY(-40px);
-}
+    }
 
     24% {
         opacity: 1;
@@ -222,5 +229,85 @@ span.setting-spin {
         -webkit-animation-timing-function: ease-out;
         animation-timing-function: ease-out;
         opacity: 1;
+    }
+}
+
+section.about {
+
+    & .btn.btn-outline-custom2 {
+        border: 2px solid #000000;
+        color: rgb(0, 0, 0);
+        padding: 10px 25px;
+        font-weight: 700;
+        border-radius: 30px;
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px;
+        -ms-border-radius: 30px;
+        -o-border-radius: 30px;
+        transition: all 0.5s;
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        -ms-transition: all 0.5s;
+        -o-transition: all 0.5s;
+
+        &:hover {
+            background-color: rgb(0, 0, 0);
+            color: hsl(0, 0%, 100%);
+            outline: none;
+            box-shadow: none;
+        }
+    }
+
+    .about-info h4 span {
+        color: var(--color-main);
+    }
+
+    .about-icons span i {
+        height: 42px;
+        width: 42px;
+        font-size: 20px;
+        border-radius: 50%;
+        border: 2px solid #d4d4d4;
+        line-height: 38px;
+        transition: all 0.5s;
+        text-align: center;
+
+        &:hover {
+            border: 2px solid var(--color-main);
+            color: var(--color-main);
+        }
+    }
+}
+
+section.Services {
+    background-color: var(--section);
+
+    & i {
+        color: var(--color-main);
+        font-size: 30px;
+    }
+
+    & p {
+        max-width: 95%;
+        margin: auto;
+    }
+
+    & .border-icrease{
+        height: 2px;
+        width: 40px;margin: auto;
+        transition: all 0.5s;
+        background-color: var(--color-main);
+    }
+
+    & .item:hover .border-icrease {
+        width: 60px;
+    }
+
+}
+section.Hire button{
+    border: none;
+    background-color: var(--color-main);
+    &:hover{
+        background-color: #cd405a;
     }
 }
